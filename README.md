@@ -38,3 +38,8 @@ Note that if you insert objects into the hash with TTL's that are not significan
 than the scan interval, you may be able to remove them after their time-out has elapsed.
 So keep the interval well below any TTLs that you'll be using.
 
+## License
+
+See LICENSE.txt
+
+
