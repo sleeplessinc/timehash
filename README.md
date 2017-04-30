@@ -9,20 +9,21 @@ A hash that discards keys/values that have sat around too long.
 ## Example
 
 
-	var th = new TimeHash()				// 10 second scan interval
+	var th = new TimeHash()
 
-	var payload = { foo: "bar" };		// any object can be inserted with the key
-	var key = "the foo";				// any string can be used as a key
+	var payload = { foo: "bar" };		// any object can be inserted 
+	var key = "the foo";				// any string can be used as the key
 	var ttl = 60 * 1000;				// time-to-live
 
 	th.insert( payload, key, ttl )		// put the object into the hash.
 
 	...
 
-	// If less than ttl time has elapsed you will get your object back
-	// Otherwise, payload will be null as it was dropped from the hash.
-
 	payload = th.remove( key )		
+
+	// If less than ttl time has elapsed, then you will get your object back
+	// Otherwise, payload will be null as it was dropped from the hash before
+	// you tried to remove it.
 
 ## Options
 
