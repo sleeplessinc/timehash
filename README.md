@@ -8,9 +8,10 @@ A hash that discards keys/values that have sat around too long.
 
 ## Example
 
-Specify scan interval (the time between scanning the hash for timed-out keys).
+Specify scan interval (the time between scanning the hash for timed-out keys) in milliseconds.
+Default scan_interval is 10 seconds.
 
-	var th = new TimeHash({scan_interval: 1000})	// default scan_interval is 10 seconds
+	var th = new TimeHash({scan_interval: 1000})	// scan once per second
 
 Or just use the default scan_interval of 10 seconds.
 Note that if you insert objects into the hash with TTL's of less than the scan_interval, you
