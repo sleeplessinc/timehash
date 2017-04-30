@@ -1,6 +1,6 @@
 # timehash
 
-A hash that discards keys/values that have sat around too long.
+A container that discards keys/values that have sat around too long.
 
 ## Install
 
