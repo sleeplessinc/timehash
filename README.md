@@ -22,8 +22,8 @@ A container that discards keys/values that have sat around too long.
 	payload = th.remove( key )		
 
 	// If less than ttl time has elapsed, then you will get your object back
-	// Otherwise, payload will be null as it was dropped from the hash before
-	// you tried to remove it.
+	// Otherwise, you will get null as the payload was dropped from the hash
+	// before you tried to remove it.
 
 ## Options
 
