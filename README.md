@@ -27,16 +27,16 @@ A container that discards keys/values that have sat around too long.
 
 ## Options
 
-Include an options object to constructor to specify the scan interval in milliseconds.
+Include an options object to the constructor to specify the scan interval in milliseconds.
 The scan interval is the time between scans of the hash for timed-out keys.
 
 	var th = new TimeHash({scan_interval: 1000})	// scan once per second
 
 The default interval is 10 seconds (10 * 1000 milliseconds).
 
-Note that if you insert objects into the hash with TTL's that are not significantly greater
+Note that if you insert objects into the hash with TTL's that are not significantly shorter
 than the scan interval, you may be able to remove them after their time-out has elapsed.
-So keep the interval well below any TTLs that you'll be using.
+So keep your TTLs well above the scan interval.
 
 ## License
 
