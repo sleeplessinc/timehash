@@ -1,0 +1,19 @@
+{
+  "name": "timehash",
+  "version": "1.0.0",
+  "description": "A hash that discards keys/values that have sat around too long.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sleeplessinc/timehash.git"
+  },
+  "author": "Joe Hitchens - joe@sleepless.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sleeplessinc/timehash/issues"
+  },
+  "homepage": "https://github.com/sleeplessinc/timehash#readme"
+}
