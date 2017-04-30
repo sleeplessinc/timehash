@@ -8,19 +8,12 @@ A hash that discards keys/values that have sat around too long.
 
 ## Example
 
-Specify scan interval (the time between scanning the hash for timed-out keys) in milliseconds.
 
-	var th = new TimeHash({scan_interval: 1000})	// scan once per second
-
-Or just use the default interval of 10 seconds (10 * 1000 milliseconds).
-Note that if you insert objects into the hash with TTL's of less than the scan_interval, you
-may be able to remove them after their time-out has elapsed.
-
-	var th = new TimeHash()
+	var th = new TimeHash()				// 10 second scan interval
 
 	var payload = { foo: "bar" };		// any object can be inserted with the key
 	var key = "the foo";				// any string can be used as a key
-	var ttl = 60 * 1000;				// the time-to-live
+	var ttl = 60 * 1000;				// time-to-live
 
 	th.insert( payload, key, ttl )		// put the object into the hash.
 
@@ -31,4 +24,16 @@ may be able to remove them after their time-out has elapsed.
 
 	payload = th.remove( key )		
 
+## Options
+
+Include an options object to constructor to specify the scan interval in milliseconds.
+The scan interval is the time between scans of the hash for timed-out keys.
+
+	var th = new TimeHash({scan_interval: 1000})	// scan once per second
+
+The default interval is 10 seconds (10 * 1000 milliseconds).
+
+Note that if you insert objects into the hash with TTL's that are not significantly greater
+than the scan interval, you may be able to remove them after their time-out has elapsed.
+So keep the interval well below any TTLs that you'll be using.
 
