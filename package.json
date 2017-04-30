@@ -1,6 +1,6 @@
 {
   "name": "timehash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A container that discards keys/values that have sat around too long.",
   "main": "index.js",
   "scripts": {
