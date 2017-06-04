@@ -35,7 +35,7 @@ var TimeHash = function(in_opts) {
 
 
 	// Put a msg into the list
-	// ttl is in secs and should not be less than 10 (default is 60 if not provided)
+	// ttl is in milliseconds and should not be less than 10,000 (default is 60,000 if not provided)
 	var insert = self.insert = function(p, id, ttl) {
 		var old = wraps[id];
 		var w = {
