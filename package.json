@@ -2,7 +2,7 @@
   "name": "timehash",
   "version": "2.0.0",
   "description": "A container that discards keys/values that have sat around too long.",
-  "main": "index.js",
+  "main": "timehash.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
