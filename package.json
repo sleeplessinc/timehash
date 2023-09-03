@@ -1,7 +1,7 @@
 {
   "name": "timehash",
   "version": "2.0.0",
-  "description": "A container that discards keys/values that have sat around too long.",
+  "description": "Memory based key/value store that discards keys/values that have sat around too long.",
   "main": "timehash.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/sleeplessinc/timehash.git"
   },
-  "author": "Joe Hitchens - joe@sleepless.com",
+  "author": "Joe Hitchens <joe@sleepless.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sleeplessinc/timehash/issues"
