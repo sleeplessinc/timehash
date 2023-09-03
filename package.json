@@ -4,14 +4,14 @@
   "description": "Memory based key/value store that discards keys/values that have sat around too long.",
   "main": "timehash.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node timehash.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sleeplessinc/timehash.git"
   },
   "author": "Joe Hitchens <joe@sleepless.com>",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/sleeplessinc/timehash/issues"
   },
