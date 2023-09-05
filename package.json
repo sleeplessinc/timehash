@@ -1,6 +1,6 @@
 {
   "name": "timehash",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Memory based key/value store that discards keys/values that have sat around too long.",
   "main": "timehash.js",
   "scripts": {

@@ -72,9 +72,14 @@ const TimeHash = function( _opts ) {
 	}
 
 
+	const keys = function() {
+		return Object.keys( wraps );
+	}
+
 	this.rem = rem;
 	this.put = put;
 	this.get = get;
+	this.keys = keys;
 }
 
 
