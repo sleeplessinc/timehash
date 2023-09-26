@@ -1,24 +1,11 @@
-# timehash
 
-Memory based key/value store that discards keys/values that have sat around too long.
+# TimeHash 
 
+A JavaScript module for a memory based key/value store that discards keys/values that have sat around too long.
 
 ## Install
 
 	npm install timehash
-
-## Usage
-
-See test.js 
-
-
-## Run tests
-
-	node index.js
-
-# TimeHash JavaScript Library Documentation
-
-The `TimeHash` JavaScript library is designed to provide a data structure for managing and tracking items with associated time-to-live (TTL) values. It is primarily used for caching and expiring data over time. This documentation will explain the functionality and usage of the `TimeHash` library.
 
 ## Table of Contents
 - [Introduction](#introduction)
