@@ -7,17 +7,6 @@ A JavaScript module for a memory based key/value store that discards keys/values
 
 	npm install timehash
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Constructor](#constructor)
-- [Methods](#methods)
-  - [get](#get)
-  - [rem](#rem)
-  - [put](#put)
-  - [keys](#keys)
-- [Usage](#usage)
-- [Node.js and Browser Support](#nodejs-and-browser-support)
-
 ## Introduction
 
 The `TimeHash` library creates a hash table that associates data items with their TTL values. When data is added to the hash table, it is associated with a unique identifier (id) and a time-to-live value (ttl) in milliseconds. The data will automatically expire and be removed from the hash table when its TTL is reached.
@@ -112,4 +101,3 @@ This allows you to use the library seamlessly in both server-side and client-sid
 
 **Note**: If you are using the library in Node.js, you can also run the included test file using `require("./test.js")` when executing the script as the main module.
 
-This documentation covers the basic usage and functionality of the `TimeHash` library. You can use this library to efficiently manage and expire data based on time-to-live values in your JavaScript applications.
